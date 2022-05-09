@@ -24,6 +24,7 @@ public class HomeController {
 	 */
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String home(Locale locale, Model model) {
+		//로그 남기기 SYSO와 동일
 		logger.info("Welcome home! The client locale is {}.", locale);
 		
 		Date date = new Date();
